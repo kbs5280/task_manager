@@ -1,0 +1,24 @@
+---
+tasks:
+- id: 1
+  title: pizza
+  description: "pizza\r\n"
+- id: 2
+  title: coke float
+  description: "coke float\r\n"
+- id: 3
+  title: Build an encryption
+  description: "Build an encryptions that will secure the contents of a file.\r\n"
+- id: 4
+  title: New task
+  description: "Build something cool\r\n"
+- id: 5
+  title: ''
+  description: ''
+- id: 6
+  title: pizza
+  description: pizza
+- id: 7
+  title: what
+  description: what?
+total: 7

@@ -1,6 +1,6 @@
 require 'models/task_manager'
 
-class TaskManagerApp < Sinatra::Base
+class TaskManangerApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)
 
   get '/' do
@@ -16,9 +16,13 @@ class TaskManagerApp < Sinatra::Base
     erb :new
   end
 
+  # post '/tasks' do
+  #   "<p>Params: #{params}</p> <p>Task params: #{params[:task]}</p>"
+  # end
+
   post '/tasks' do
     task_manager.create(params[:task])
-    redirect '/tasks'
+    redirect '/task'
   end
 
   get '/tasks/:id' do |id|
